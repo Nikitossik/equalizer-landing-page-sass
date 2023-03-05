@@ -26,4 +26,8 @@
     @include mq-down(tablet) {
         display: none;
     }
+
+    @include mq-up(desktop) {
+        right: 0;
+    }
 }
