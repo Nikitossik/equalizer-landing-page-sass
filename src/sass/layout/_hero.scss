@@ -23,6 +23,7 @@
     &__text {
         @include mq-up(tablet) {
             max-width: fluid(455, 670, 768, 1440);
+            font-size: fluid(18, 20, 768, 1200);
         }
     }
 }
