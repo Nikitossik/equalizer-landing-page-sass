@@ -1,0 +1,9 @@
+@use '../abstracts'as *;
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: fluid(40, 62, 320, 768) 0;
+}

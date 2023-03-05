@@ -1,0 +1,30 @@
+@use '../abstracts'as *;
+
+.btn {
+    border-radius: rem(12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: rem(15);
+    background-color: $black;
+    color: $white;
+    font-weight: 700;
+    font-size: rem(18);
+    letter-spacing: rem(-0.18);
+    line-height: 1.78;
+    transition: .3s background-color ease;
+
+    @include on-event() {
+        background-color: $btn-dark-hover;
+    }
+
+    &--light {
+        background-color: $white;
+        color: $black;
+
+        @include on-event() {
+            background-color: $btn-light-hover;
+        }
+    }
+}

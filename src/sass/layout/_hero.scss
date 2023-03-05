@@ -1,0 +1,28 @@
+@use '../abstracts'as *;
+
+.hero {
+    padding: fluid(136, 190, 320, 768) 0 fluid(166, 250, 320, 768);
+
+    @include mq-up(tablet) {
+        padding: fluid(190, 220, 768, 1200) 0 fluid(250, 320, 768, 1200);
+    }
+
+    &__title {
+        margin-bottom: rem(20);
+
+        @include mq-up(tablet) {
+            max-width: fluid(455, 900, 768, 1440);
+            margin-bottom: rem(28);
+        }
+
+        @include mq-up(desktop) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    &__text {
+        @include mq-up(tablet) {
+            max-width: fluid(455, 670, 768, 1440);
+        }
+    }
+}

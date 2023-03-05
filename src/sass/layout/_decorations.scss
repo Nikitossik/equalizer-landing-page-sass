@@ -1,0 +1,29 @@
+@use '../abstracts'as *;
+
+.bg-decore {
+    position: absolute;
+    width: max-content;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transform: translate(35%, -25%);
+
+    @include mq-up(tablet) {
+        transform: translate(10%, -20%);
+    }
+
+    @include mq-up(desktop) {
+        transform: translate(10%, -11%);
+    }
+}
+
+.bg-pattern {
+    position: absolute;
+    top: rem(-35);
+    right: rem(-35);
+    width: fluid(266, 312, 768, 1200);
+
+    @include mq-down(tablet) {
+        display: none;
+    }
+}
